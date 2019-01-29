@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: lightgrey;
+  color: white;
+}
+
+#contentcontainer {
+  background-image: url("spacebody.jpg");
+}
+.navbar-brand {
+  font-style: italic;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+nav a:hover{
+    color: blue;
+    letter-spacing: .01rem;
+}
+
+textarea, select, input, button { outline: none; }
+
+footer {
+  background-color: #343A40;
+  padding-top: 20px;
+}

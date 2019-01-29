@@ -1,2 +1,87 @@
-<h1>SimplePages#index</h1>
-<p>Find me in app/views/simple_pages/index.html.erb</p>
+<div  id="typewriter">
+  <h1 class="display-4" id="typexxx">>></h1>
+  <input id="clickMe" type="button" value="RUN PROGRAM" onclick="typeWriter();" />
+  <input id="clickMe2" class="hidebutton"type="button" value="^^^ HIDE ^^^" onclick="typeHide();" />
+
+</div>
+
+<input id="clickMe2" class="showbutton" type="button" value="SHOW PROGRAM" onclick="typeShow();" />
+
+<div class= "container" id="cooltext">
+  <div class ="row">
+    <div class="col-6 text-right" id="discovertext">
+      <input id="color" type="button" value="Discover" onclick="changecolour('color', '0');" />
+    </div>
+    <div class="col-6 text-left" id="whattext">
+      <input id="color2" type="button" value="what" onclick="changecolour('color2', '0');" />
+    </div>
+    <div class="col-6 text-right" id="ivetext">
+      <input id="color3" type="button" value="i've" onclick="changecolour('color3', '0');" />
+    </div>
+    <div class="col-6 text-left" id="createdtext">
+      <input id="color4" type="button" value="created!" onclick="changecolour('color4', '0');" />
+    </div>
+  </div>
+</div>
+
+<div class="container" id ="randombuttons">
+  <div class="row">
+    <div class="col-4">
+      <input id="changer1" type="button" value="Click!!!" onclick="changecoloursequence('changer1');" />
+    </div>
+    <div class="col-4">
+      <input id="changer2" type="button" value="Click!!!" onclick="changecoloursequence('changer2');" />
+    </div>
+    <div class="col-4">
+      <input id="changer3" type="button" value="Click!!!" onclick="changecoloursequence('changer3');" />
+    </div>
+  </div>
+</div>
+
+<div class= "container" id="navbuttons">
+  <div class ="row">
+    <div class="col-sm-12 text-center">
+      <button type="button" id = "menubutton" class="btn btn-outline-light">
+        <%= link_to "My Work", portfolio_index_path, class: "nav-link"%>
+      </button>
+    </div>
+    <div class="col-md-4 text-center">
+      <button type="button" id = "menubutton" class="btn btn-outline-light">
+        <%= link_to "About Me", simple_pages_about_path, class: "nav-link"%>
+      </button>
+    </div>
+    <div class="col-md-4 text-center">
+      <button type="button" id = "menubutton" class="btn btn-outline-light">
+        <%= link_to "Contact Me", simple_pages_contact_path, class: "nav-link"%>
+      </button>
+    </div>
+    <div class="col-md-4 text-center" id="otherstuffbutton">
+      <button type="button" id = "menubutton" class="btn btn-outline-light">Other Stuff</button>
+    </div>
+  </div>
+</div>
+
+<div class= "container" id="social-icons">
+  <div class ="row">
+    <div class="col-3 text-center">
+      <a href="https://www.linkedin.com/in/louie-ormston-48810a150/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="col-3 text-center">
+      <a href="https://github.com/leormston?tab=overview&from=2019-01-01&to=2019-01-28" target="_blank">
+        <i class="fab fa-github-square"></i>
+      </a>
+    </div>
+    <div class="col-3 text-center">
+      <a href="https://www.facebook.com/louie.ormston.16" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+    <div class="col-3 text-center">
+      <a href="https://www.instagram.com/louie_ormston/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</div>

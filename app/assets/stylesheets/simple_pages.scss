@@ -1,3 +1,127 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron-fluid {
+  background-color: black;
+  color:white;
+}
+
+#clickMe {
+  position: absolute;
+  height: 70px;
+  background-color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+#clickMe2 {
+  height: 30px;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: -30px;
+  position: absolute;
+  top: 55px;
+}
+
+#typexxx {
+  padding-top: 20px;
+}
+#menubutton {
+  padding: 15px 25px;
+  border-radius: 30px;
+  border-width: 3px;
+}
+
+.col-md-4,
+.col-sm-12 {
+  padding: 40px 0px;
+}
+
+#discovertext {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 5rem;
+  color: black;
+}
+
+#whattext {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 3.8rem;
+}
+
+#ivetext {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 3.8rem;
+  border: black 10px  solid;
+  border-left-width: 200px;
+}
+
+#createdtext {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 5rem;
+  color: black;
+}
+
+@media only screen and (max-width: 900px) {
+
+  #discovertext {
+    font-size: 1.9rem;
+
+  }
+  #whattext {
+    font-size: 1.7rem;
+  }
+  #ivetext {
+    font-size: 1.7rem;
+    border-left-width: 70px;
+
+  }
+  #createdtext {
+    font-size: 2.3rem;
+  }
+  #menubutton {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #otherstuffbutton {
+    display: none;
+  }
+}
+
+#cooltext {
+  padding-top: 150px;
+}
+
+#wordinfo {
+  padding-top: 30px;
+  text-align: center;
+  background-color: pink;
+  color: black;
+}
+
+#randombuttons {
+  padding: 40px;
+  text-align: center;
+
+}
+
+#changer1,
+#changer2,
+#changer3 {
+  border-radius: 20px;
+  font-size: 1.2rem;
+  background-color: blue;
+}
+
+i {
+  font-size: 5rem;
+}
+
+#navbuttons {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+#social-icons {
+  padding-bottom: 50px;
+}
