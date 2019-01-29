@@ -14,14 +14,14 @@
  *= require_self
  */
 body {
-  background-color: black;
+  background-image: url("spacebody.png");
   color: white;
 }
 
 #contentcontainer {
-  background-image: url("spacebody.jpg");
-  background-image: url("spacebody.png");
+  background-color: transparent;
 }
+
 .navbar-brand {
   font-style: italic;
   font-family: 'Oswald', sans-serif;

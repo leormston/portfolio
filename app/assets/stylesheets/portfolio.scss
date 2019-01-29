@@ -1,3 +1,59 @@
 // Place all the styles related to the portfolio controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#contentcontainer {
+  background-color: black;
+}
+hr {
+  border: 1px solid white;
+}
+
+.site-img {
+  max-width: 100%;
+  padding-top: 30%;
+  padding-bottom: 10%;
+}
+
+#summarybackdrop {
+  color: black;
+  background-color: #f9fbff;
+  border: 1px solid;
+  border-radius: 30px;
+}
+
+#summarybackdrop:hover {
+  background-color: yellow;
+}
+
+#summarycontainer {
+  padding-bottom: 30px;
+}
+.mobile {
+  display: none;
+}
+
+h1 {
+  font-weight: 550;
+}
+
+@media only screen and (max-width: 900px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+  }
+}
+
+#summaryspacing {
+  padding-bottom: 400px;
+}
+
+@media only screen and (min-width: 900px) {
+  .portfoliotitle {
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 0.25rem;
+    font-family: 'Major Mono Display', monospace;
+  }
+};

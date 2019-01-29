@@ -1,0 +1,23 @@
+<% @sites.each do |site| %>
+  <div class="container" id="summarycontainer">
+    <div class="row " id="summarybackdrop">
+      <div class="col-2 desktop">
+        <%= image_tag(site.image_url, class:"site-img") %>
+
+      </div>
+      <div class="col-8 desktop">
+        <h1><%=site.name%></h1>
+        <hr>
+        <h5><%=site.description%></h5>
+        <p> Date Produced: <%=site.date%> &emsp; &emsp; &emsp; &emsp;Site Url: <%=site.url%></p>
+      </div>
+      <div class="col-12 mobile">
+        <h2><%=site.name%></h2>
+        <hr>
+        <h5><%=site.description%></h5>
+        <p> Date Produced: <%=site.date%> &emsp; &emsp; &emsp; &emsp;Site Url: <%=site.url%></p>
+      </div>
+    </div>
+</div>
+
+<%end%>

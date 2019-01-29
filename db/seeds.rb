@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Site.create(
+  name: "GPU-Market",
+  url: "https://gpu-marketplace.herokuapp.com/",
+  description: "A site which purpose served selling graphics cards to the consumer. Customers could view, browse and pay all through the site.",
+  date: "Dec 2018",
+  image_url: "funky gradient logo.png")
+
+Site.create(
+  name: "A1 Direct Supplies LTD",
+  url: "https://a1directsupplies.herokuapp.com/",
+  description: "A fitting site for a rapidly growing industrial supplier based in Nottingham. This site should serve them justice",
+  date: "Jan 2018",
+  image_url: "A1 Direct Supplies.png")
