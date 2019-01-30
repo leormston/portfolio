@@ -1,2 +1,87 @@
-<h1>SimplePages#about</h1>
-<p>Find me in app/views/simple_pages/about.html.erb</p>
+<h1 class="title">about me</h1>
+<hr>
+
+<div class= "row">
+  <div class="col-4 text-center" id="info1">
+    <input id="info1button" type="button" value="Who am I?" onclick="menuSwitch('infobody2', 'infobody3', 'infobody1');" />
+  </div>
+  <div class="col-4 text-center" id="info2">
+    <input id="info2button" type="button" value="Skills" onclick="menuSwitch('infobody1', 'infobody3', 'infobody2');" />
+  </div>
+  <div class="col-4 text-center" id="info3">
+    <input id="info3button" type="button" value="Interests" onclick="menuSwitch('infobody1', 'infobody2', 'infobody3');" />
+  </div>
+</div>
+
+<div class= "row" id="infobody1">
+  <div class="col-sm-4 col-12">
+    <%= image_tag('me.jpeg', class:"aboutimg") %>
+  </div>
+  <div class="col-sm-8 col-12 ">
+    <p>I am an 18 year old currently studying Web development at a school called CareerFoundry.</p>
+    <p>Based in Derby in the East Midlands I have just finished my A-levels. I am currently partaking in a gap year where I prepare for university</p>
+    <p>During my gap year I am looking to expand my knowledge in Computer Science and gain as much experience as possible. </p>
+    <p>I like to drive every project I start with passion and ensure that it finishes complete. Any project taken on commercially will recieve
+    huge amounts of attention and will be completed in the best quality all within a short timeframe </p>
+  </div>
+</div>
+
+
+
+<div class="container" id="infobody2">
+  <div class= "row" >
+    <div class="col-sm-4 col-12">
+      <%= image_tag('photoshop.jpeg', class:"aboutimg") %>
+    </div>
+    <div class="col-sm-8 col-12">
+      <p>Relating to web development I am strong in the user of software such as Adobe Photoshop. This aids in design for graphics on websites.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-12">
+      <%= image_tag('ruby.png', class:"aboutimg") %>
+    </div>
+    <div class="col-sm-8 col-12">
+      <p>I am confident in the Ruby on rails environment too. Using different gems/plugins the functionality of sites I am able to produce can vary widely.
+      I am also comfortable using other languages outside of Ruby too. For example JavaScript, Python and HTML/css. Combined these allow for the ultimate
+      bespoke web design experience, where all requirements are met thanks to the developers specialities.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-12">
+      <%= image_tag('study.jpeg', class:"aboutimg") %>
+    </div>
+    <div class="col-sm-8 col-12">
+      <p>Many of skills I obtain have been acquired through studies. My most recent studies were A levels in Physics, Computer Science and Economics</p>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="infobody3">
+  <div class= "row" >
+    <div class="col-sm-4 col-12">
+      <%= image_tag('tutor.jpg', class:"aboutimg") %>
+    </div>
+    <div class="col-sm-8 col-12">
+      <p>One part of my outside life is work, where I am actually an in school tutor, helping children achieve their grades. The children I tutor range in ages from 11-16</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-12">
+      <%= image_tag('dumbell.jpeg', class:"aboutimg") %>
+    </div>
+    <div class="col-sm-8 col-12">
+      <p>Sitting down all day isn't too good for your health either so some exercise is probably good. I go to the gym around 4 times a week where I complete 1 hour of strength training</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-12">
+      <%= image_tag('running.jpeg', class:"aboutimg") %>
+    </div>
+    <div class="col-sm-8 col-12">
+      <p>I also enjoy running. I try to run around 30km a week but only really achieve 20 :(</p>
+    </div>
+  </div>
+</div>
+
+<p id="bottomspacing"></p>

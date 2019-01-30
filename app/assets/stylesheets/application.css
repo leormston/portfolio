@@ -16,8 +16,15 @@
 body {
   background-image: url("spacebody.png");
   color: white;
+  font-family: 'Major Mono Display', monospace;
 }
 
+p,
+h5,
+input,
+#typexxx  {
+  font-family: 'IBM Plex Mono', monospace;
+}
 #contentcontainer {
   background-color: transparent;
 }
@@ -45,3 +52,29 @@ footer {
   background-color: #343A40;
   padding-top: 20px;
 }
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  font-family: 'Major Mono Display', monospace;
+}
+.subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  font-family: 'Major Mono Display', monospace;
+}
+
+@media only screen and (min-width: 900px) {
+  .title {
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 0.25rem;
+    font-family: 'Major Mono Display', monospace;
+  }
+  .subtitle {
+    font-size: 1.9rem;
+    letter-spacing: 0.25rem;
+    font-family: 'Major Mono Display', monospace;
+  }
+};

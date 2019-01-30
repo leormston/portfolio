@@ -19,12 +19,15 @@ $(document).on('turbolinks:load ', function(){
   $("#createdtext").hide();
   $("#whattext").hide();
   $("#ivetext").hide();
+  $("#infobody2").hide();
+  $("#infobody3").hide();
   $("#discovertext").fadeIn(800);
   $("#createdtext").fadeIn(1500);
   $("#whattext").fadeIn(2000);
   $("#ivetext").fadeIn(2000);
   $("#color3").css("background-color", "purple");
   $("#color2").css("background-color", "lightgreen");
+
 });
 
 var i = 0;
@@ -77,4 +80,10 @@ async function changecoloursequence(changer) {
   changecolour("color3", 0);
   changecolour("color4", 0);
   $("#" + changer).fadeOut(1000);
+}
+
+function menuSwitch(element1, element2, element3) {
+  $("#" + element1).hide();
+  $("#" + element2).hide();
+  $("#" + element3).fadeIn("slow");
 }

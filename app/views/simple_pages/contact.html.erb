@@ -1,6 +1,17 @@
-<h1>SimplePages#contact</h1>
-<h1>Contact Us</h1>
 
+<h1 class="title">contact Me</h1>
+<hr>
+
+<h1 class="subtitle">View me on social media!</h1>
+<hr>
+<div class= "container" id="social-icons">
+  <div class ="row">
+    <%=render 'socialicons'%>
+  </div>
+</div>
+
+<h1 class="subtitle">or send me a message directly</h1>
+<hr>
 <%= flash[:notice] %>
 
   <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>

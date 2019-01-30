@@ -74,13 +74,16 @@
 
   }
   #createdtext {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
   }
   #menubutton {
     padding-top: 10px;
     padding-bottom: 10px;
   }
   #otherstuffbutton {
+    display: none;
+  }
+  #clickme2 {
     display: none;
   }
 }
@@ -121,4 +124,64 @@ i {
 
 #social-icons {
   padding-bottom: 50px;
+}
+
+hr {
+  border: 1px solid white;
+}
+
+#info1,
+#info2,
+#info3 {
+  border: solid white 1px;
+}
+
+#info1 {
+  background-color: red;
+}
+
+#info2 {
+  background-color: purple;
+}
+
+#info3 {
+  background-color: blue;
+}
+
+#info1button {
+  width: 100%;
+  color: white;
+  background-color: red;
+  border: red solid;
+}
+
+#info2button {
+  width: 100%;
+  color: white;
+  background-color: purple;
+  border: purple solid;
+}
+
+#info3button {
+  width: 100%;
+  color: white;
+  background-color: blue;
+  border: blue solid;
+}
+
+#infobody1,
+#infobody2,
+#infobody3 {
+  padding-top: 50px;
+}
+#bottomspacing {
+  padding-bottom: 500px;
+}
+
+.aboutimg {
+  max-width: 70%;
+  align: center;
+  padding-left: 10%;
+  padding: 20px 0px;
+
 }
