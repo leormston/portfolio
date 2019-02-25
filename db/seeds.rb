@@ -17,5 +17,12 @@ Site.create(
   name: "A1 Direct Supplies LTD",
   url: "https://a1directsupplies.herokuapp.com/",
   description: "A fitting site for a rapidly growing industrial supplier based in Nottingham. This site should serve them justice",
-  date: "Jan 2018",
+  date: "Jan 2019",
   image_url: "A1 Direct Supplies.png")
+
+  Site.create(
+    name: "BookReviewSunday",
+    url: "https://book-review-sunday.herokuapp.com/",
+    description: "Books are fun to read but review sites not so much. This site exists to make book reviews exciting and interesting.",
+    date: "Feb 2019",
+    image_url: "BookReviewSunday.png")
