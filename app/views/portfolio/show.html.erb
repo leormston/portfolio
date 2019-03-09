@@ -1,0 +1,20 @@
+<h1 class="showtitle"><%=@site.name%></h1>
+<hr>
+<div class="row">
+  <div class="col-6 showlinks">
+    <a class="showlinks" href='<%=@site.url%>'><i class="fas fa-eye showlinks"></i>View Site</a>
+  </div>
+  <div class="col-6 showlinks">
+    <a class="showlinks" href='<%=@site.github%>'><i class="fab fa-github-square showlinks" ></i>Source Code</a>
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col-6 col-sm-12">
+    <h2>site features :</h2>
+  </div>
+  <div class="col-6 col-sm-12">
+  </div>
+</div>
+<%= image_tag(@site.screenshot, width: "100%")%>

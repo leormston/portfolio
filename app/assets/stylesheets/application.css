@@ -17,6 +17,8 @@ body {
   background-image: url("spacebody.png");
   color: white;
   font-family: 'Major Mono Display', monospace;
+  margin: 0px;
+  line-height: normal;
 }
 
 p,

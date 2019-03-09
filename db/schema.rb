@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_29_134333) do
+ActiveRecord::Schema.define(version: 2019_03_09_124245) do
+
+  create_table "features", force: :cascade do |t|
+    t.string "feature"
+    t.integer "site_id"
+  end
 
   create_table "sites", force: :cascade do |t|
     t.string "name"
@@ -20,6 +25,12 @@ ActiveRecord::Schema.define(version: 2019_01_29_134333) do
     t.string "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "github"
+    t.string "development_time"
+    t.string "goal"
+    t.string "challenges"
+    t.string "result"
+    t.string "screenshot"
   end
 
 end

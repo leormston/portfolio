@@ -1,17 +1,29 @@
 <% @sites.each do |site| %>
   <div class="container" id="summarycontainer">
-    <div class="row " id="summarybackdrop">
+    <div class="row " id="summarybackdrop summarybackdropdesktop">
       <div class="col-2 desktop">
         <%= image_tag(site.image_url, class:"site-img") %>
 
       </div>
-      <div class="col-8 desktop">
-        <h1><%=site.name%></h1>
+      <div class="col-6 desktop">
+        <h2><%=site.name%></h2>
         <hr>
         <h5><%=site.description%></h5>
         <p> Date Produced: <%=site.date%> </p>
         <p><a href= <%=site.url%> > Site Url:<%=site.url%></a></p>
       </div>
+
+      <div class="col-4 desktop">
+        <div class="buttonheightportfolio">
+          <%=form_with(url:"/portfolio/show", method: "get", local: true) do |form| %>
+            <%@site_id = site.id%>
+            <%=form.hidden_field :site_id, value: @site_id%>
+            <%=form.submit "Behind the magic!", class: "btn btmbutton"%>
+          <%end%>
+        </div>
+      </div>
+
+
       <div class="col-12 mobile">
         <h2><%=site.name%></h2>
         <hr>
