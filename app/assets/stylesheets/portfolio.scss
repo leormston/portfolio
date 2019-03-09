@@ -49,6 +49,11 @@ h1 {
   text-decoration: none;
 }
 
+.conciseinfo {
+  font-family:  'Thasadith', 'Open Sans Condensed', sans-serif;
+  border-right: solid white 2px;
+}
+
 @media only screen and (max-width: 900px) {
   .desktop {
     display: none;
@@ -77,4 +82,9 @@ h1 {
 .buttonheightportfolio {
   padding-top : 60px;
   padding-bottom: 150px;
+}
+
+.screenshot {
+  padding-bottom: 40px;
+  width: 100%;
 }

@@ -11,10 +11,26 @@
 <hr>
 
 <div class="row">
-  <div class="col-6 col-sm-12">
-    <h2>site features :</h2>
+  <div class="col-sm-3 col-12 conciseinfo">
+    <p style="text-align:center;"><%=image_tag(@site.image_url, width: "80%")%></p>
+    <h4><strong>Date Developed</strong> <br><%=@site.date%></h4>
+    <h4><strong>Development Time</strong><br><%=@site.development_time%></h4>
   </div>
-  <div class="col-6 col-sm-12">
+  <div class="col-sm-9 col-12">
+    <h2>Description</h2>
+    <hr>
+    <p><%=@site.description%></p>
+    <h2>The Goal</h2>
+    <hr>
+    <p><%=@site.goal%></p>
+    <h2>Challenges</h2>
+    <hr>
+    <p><%=@site.challenges%></p>
+    <h2>The final result</h2>
+    <hr>
+    <p><%=@site.result%></p>
   </div>
 </div>
-<%= image_tag(@site.screenshot, width: "100%")%>
+<h2 style="padding-top:10px;">Screenshots</h2>
+<hr>
+<%= image_tag(@site.screenshot, class: "screenshot", width: "100%")%>
